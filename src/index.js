@@ -6,9 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router,Routes,Route, useHref} from 'react-router-dom'
 import Singin from './components/Singin';
 import Singup from './components/Singup';
-import ProductZapatos from './components2/ProductZapatos';
-import ProductAccesorio from './components2/ProductAccesorios';
-import ProductGuantes from './components2/ProductGuantes';
+import AdmProducts from './components2/Product/AdmProducts';
+import AddProduct from './components2/Product/addProduct';
+import Product from './components2/Product/Product';
+
 
 
 ReactDOM.render(
@@ -18,13 +19,12 @@ ReactDOM.render(
 
 <Router>
     <Routes>
-   <Route path='/' element={<App/>}/>
-     <Route path="/SingUp" element={<Singup/>}/>
-     <Route path="/SingIn" element={<Singin/>}/>
-     <Route path="/Guantes" element={<ProductGuantes/>}/>
-     <Route path="/Zapatos" element={<ProductZapatos/>}/> 
-     <Route path="/Accesorios" element={<ProductAccesorio/>}/>    
-     
+      <Route path='/' element={<App/>}/>
+      <Route path="/SingUp" element={<Singup/>}/>
+      <Route path="/SingIn" element={<Singin/>}/>
+      <Route path="/admproducts" element={<AdmProducts/>}/>    
+      <Route path= "/addproduct" element ={<AddProduct/>}/> 
+      <Route path= "/product" element ={<Product/>}/> 
    </Routes>
  </Router>, 
 
